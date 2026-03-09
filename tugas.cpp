@@ -20,17 +20,6 @@ int main (){
     float berat,tinggi,Hasil;
     string Status;
 
-    cout << "--- Selamat Datang Mahasiswa Kelas A 2025 ---" << endl;
-    cout << "Masukan Berat Badan (kg): ";
-    cin >> berat;
-    cout <<"Masukkan Tinggi Badan (Meter): ";
-    cin >> tinggi;
-
     
-    Hasil = hitung_BMI(berat,tinggi);
-    
-    cout << " --- Hasil ---" << endl;
-    cout << "BMI anda : "<<Hasil <<endl;
-    cout << "Status :" << condition_BMI(Hasil) << endl;
 }
 
