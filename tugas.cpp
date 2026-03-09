@@ -6,5 +6,31 @@ float hitung_BMI(float a,float b){
 }
 
 string condition_BMI(float r){
+    if (r >= 30)
+    return "Obesitas";
+else if (r >= 25)
+    return "Berat Badan Berlebihan";
+else if (r >= 18.5)
+    return "Berat Badan Normal";
+else
+    return "Berat Badan Kurang";
+}
 
+int main (){
+    float berat,tinggi,Hasil;
+    string Status;
+
+    cout << "--- Selamat Datang Mahasiswa Kelas A 2025 ---" << endl;
+    cout << "Masukan Berat Badan (kg): ";
+    cin >> berat;
+    cout <<"Masukkan Tinggi Badan (Meter): ";
+    cin >> tinggi;
+
+    
+    Hasil = hitung_BMI(berat,tinggi);
+    
+    cout << " --- Hasil ---" << endl;
+    cout << "BMI anda : "<<Hasil <<endl;
+    cout << "Status :" << condition_BMI(Hasil) << endl;
+}
 
