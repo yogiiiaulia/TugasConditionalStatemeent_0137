@@ -5,5 +5,6 @@ float hitung_BMI(float a,float b){
     return a/(b*b);
 }
 
+string condition_BMI(float r){
 
 
