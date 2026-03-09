@@ -27,6 +27,10 @@ int main (){
     cin >> tinggi;
 
     
+    Hasil = hitung_BMI(berat,tinggi);
     
+    cout << " --- Hasil ---" << endl;
+    cout << "BMI anda : "<<Hasil <<endl;
+    cout << "Status :" << condition_BMI(Hasil) << endl;
 }
 
